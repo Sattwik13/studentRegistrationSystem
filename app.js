@@ -29,11 +29,13 @@ form.addEventListener('submit', function(e) {
         return;
     }
 
+    // validate Name input field
     if (!/^[A-Za-z\s]+$/.test(name)) {
         alert('Name can only contain letters.');
         return;
     }
 
+    // validate ID and Contact input field
     if (!/^[0-9]+$/.test(id) || !/^[0-9]+$/.test(contact)) {
         alert('ID and Contact must be numbers.');
         return;
